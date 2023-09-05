@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+:root {
+    --bg-hover: #0d6efd;
+    --background: rgb(0, 81, 255);
+    --white: rgb(255, 255, 255);
+    --black: rgb(0, 0, 0);
+
+}
+
+.carousel-item .hero-img {
+    width: 100%;
+    min-height: 50vh;
+    max-height: 90vh;
+    position: relative;
+}
+
+.about-info .col img {
+    width: 100%;
+    min-height: 30vh;
+    max-height: 45vh;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-three-column {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+
+.box {
+    padding: 1.2rem 1.3rem;
+    box-shadow: 0 1px 3px 0 var(--background);
+    transition: all 0.3s linear;
+}
+
+.box:hover {
+    transform: scale(1.05, 1.05);
+
+}
+
+.client-section .carousel-item .row .card .client-img {
+    height: 13rem;
+    border-radius: 6px;
+}
+
+.client-section .carousel-inner .carousel-item .row {
+    margin: 0 auto;
+}
+
+.client-section .carousel-indicators {
+    bottom: -30px;
+}
+
+.client-section .carousel-indicators [data-bs-target] {
+    width: 15px;
+    height: 15px;
+    background-color: var(--background);
+}
+
+.client-section .carousel-inner .carousel-item .row .card {
+    transition: all 0.3s linear;
+}
+
+.client-section .carousel-inner .carousel-item .row .card:hover {
+    background-color: var(--black);
+}
+
+.client-section .carousel-inner .carousel-item .row .card .card-title,
+.card-text {
+    transition: all 0.3s linear;
+}
+
+.client-section .carousel-inner .carousel-item .row .card:hover .card-title {
+    color: var(--white);
+}
+
+.client-section .carousel-inner .carousel-item .row .card:hover .card-text {
+    color: var(--white);
+}
+
+.client-section .carousel-inner .carousel-item .row .card:hover .card-body .fa-star {
+    color: var(--background);
+}
+
+.contact-section button {
+    width: fit-content;
+    padding: 0.5rem 2.5rem;
+}
+
+.contact-section .form-section {
+    width: 50%;
+}
+
+.footer-section .row {
+    width: 50%;
+}
+
+.footer-section .row .col-lg-4 {
+    width: 100%;
+}
+
+.footer-section .row .img1,
+.img2,
+.img3 {
+    transition: all 0.3s linear;
+}
+
+.footer-section .row .img1:hover {
+    color: var(--background);
+    background-color: var(--black);
+    cursor: pointer;
+}
+
+.footer-section .row .img2:hover {
+    color: var(--background);
+    background-color: var(--black);
+    cursor: pointer;
+}
+
+.footer-section .row .img3:hover {
+    color: var(--background);
+    background-color: var(--black);
+    cursor: pointer;
+}
+
+/*  X-Small devices (portrait phones, less than 576px)
+ No media query for `xs` since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+
+    .about-info .center,
+    .about-info button {
+        text-align: center;
+        margin: 1rem auto;
+    }
+
+    .grid-three-column {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card-m-auto {
+        margin: 0 auto;
+    }
+
+    .card-hide {
+        display: none;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+    /* .form-container .medium-widht {
+        width: 30.1rem;
+    } */
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}
